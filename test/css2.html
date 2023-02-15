@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The &lt;div&gt; Tag</title>
+    <style>
+      .content {
+        overflow: auto;
+        border: 17px solid #666;
+      }
+      .content div {
+        padding: 10px;
+      }
+      .content a {
+        color: darkblue;
+      }
+      .blue {
+        float: right;
+        width: 45%;
+        background-color: #1faadb;
+      }
+      .green {
+        float: left;
+        width: 35%;
+        background-color: #8ebf42;
+      }
+      .flex-container {
+        display: flex;
+        align-items: center; /* Use another value to see the result */
+        width: 100%;
+        height: 200px;
+        background-color: #1faadb;
+      }
+      .flex-container > div {
+        width: 40%;
+        height: 20px;
+        margin: 5px;
+        border-radius: 12px;
+        background-color: #8ebf42;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The &lt;div&gt; Tag</h1>
+    <div style="background-color: #8ebf42">
+      <p>
+        We use the &lt;div&gt; tag to group two paragraphs for applying a
+        background to the text, and to add color to this
+        <span style="color: #1c87c9">word</span> we place it within &lt;span&gt;
+        tag.
+      </p>
+      <p>
+        Pay attention, that the &lt;div&gt; tag is a block-level element, so a
+        line break is placed before and after it.
+      </p>
+    </div>
+    <div class="flex-container">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="content">
+      <div class="blue">
+        <p>This is some paragraph inside div tag.</p>
+        <a href="#">This is some hyperlink inside div tag.</a>
+        <ul>
+          <li>List item 1</li>
+          <li>List item 2</li>
+        </ul>
+      </div>
+      <div class="green">
+        <p>This is some paragraph inside div tag.</p>
+        <ol>
+          <li>List item 1</li>
+          <li>List item 2</li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>

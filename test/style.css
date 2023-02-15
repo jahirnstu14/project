@@ -1,0 +1,11 @@
+p {
+  background-color: green;
+  color: white;
+  height: 500px;
+  float: left;
+  font-family: "Times New Roman", Times;
+}
+.dive {
+  background-color: aqua;
+  height: 500px;
+}
